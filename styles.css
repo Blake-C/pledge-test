@@ -1,7 +1,13 @@
 @charset "UTF-8";
 
-* {
+/*************
+    Resets
+*************/
+*,
+*:before,
+*:after {
 	box-sizing: border-box;
+	overflow: initial;
 }
 
 body {
@@ -11,6 +17,43 @@ body {
 	font-size: 100%;
 }
 
+p {
+	margin: 10px 0;
+	padding: 0;
+	font-size: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 10px 0;
+}
+
+h1 {
+	font-size: 2rem;
+}
+h2 {
+	font-size: 1.8rem;
+}
+h3 {
+	font-size: 1.7rem;
+}
+h4 {
+	font-size: 1.6rem;
+}
+h5 {
+	font-size: 1.5rem;
+}
+h6 {
+	font-size: 1.4rem;
+}
+
+/*************
+    Global Classes
+*************/
 .screen-reader-text {
 	border: 0;
 	clip-path: inset(50%);
@@ -207,4 +250,115 @@ body {
 		margin: 94px auto 30px;
 		font-size: 2rem;
 	}
+}
+
+/*************
+    Main Content
+*************/
+.main-content {
+	background-color: rgb(77, 122, 188);
+	color: rgb(255, 255, 255);
+}
+
+.pladge-wrapper {
+	max-width: 1034px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 64px 0 100px;
+}
+
+.leaderboard,
+.current-pledges {
+	padding: 15px;
+	width: 50%;
+}
+
+.current-pledges {
+	padding-right: 120px;
+	border-right: 1px solid rgb(144, 172, 213);
+	position: relative;
+}
+
+.current-pledges:after {
+	background-image: url('./images/recycle-circle.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	bottom: 50%;
+	content: '';
+	display: block;
+	height: 120px;
+	margin-top: -60px;
+	position: absolute;
+	right: -60px;
+	top: 50%;
+	width: 120px;
+}
+
+.current-pledges__callout {
+	font-size: 2.5rem;
+}
+
+.current-pledges__stats {
+	display: block;
+	font-size: 8rem;
+	color: rgb(90, 255, 168);
+	font-weight: 700;
+}
+
+.leaderboard {
+	padding-left: 140px;
+}
+
+.leaderboard__title {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.4rem;
+}
+
+.leaderboard__pledges {
+	padding: 0;
+	margin: 0;
+}
+
+.leaderboard__pledges li {
+	list-style-type: none;
+	/* display: flex;
+	flex-wrap: nowrap; */
+	padding-bottom: 5px;
+}
+
+.leaderboard__district-title {
+	background-color: rgb(64, 113, 182);
+	color: rgb(13, 83, 150);
+	display: inline-block;
+	font-weight: 700;
+	min-width: 95px;
+	padding: 6px 9px;
+}
+
+.leaderboard__pledge {
+	color: rgb(166, 189, 222);
+	font-size: 0.9rem;
+	padding: 6px 9px;
+}
+
+/* .leaderboard__bar-graph {
+	flex-grow: 1;
+} */
+
+/*************
+    Site Footer
+*************/
+.site-footer {
+	max-width: 1034px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.site-footer p {
+	color: rgb(77, 122, 188);
+	padding: 32px 0 37px;
+	font-size: 0.8rem;
+	font-weight: 700;
 }
