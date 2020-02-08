@@ -5,42 +5,62 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Pledge Test</title>
 
+		<link
+			href="https://fonts.googleapis.com/css?family=Lato:100,400,700&display=swap"
+			rel="stylesheet"
+		/>
+
 		<link rel="stylesheet" href="/styles.css" />
 	</head>
 	<body>
-		<a class="skip-to-content" href="#content">Jump to content</a>
+		<a class="skip-to-content screen-reader-text" href="#content"
+			>Jump to content</a
+		>
 
 		<div class="header-wrapper">
 			<header class="site-header">
-				<div class="site-logo">
+				<div class="site-header__logo">
 					<img src="/images/logo.png" alt="" />
 				</div>
 
-				<div class="site-navigation">
+				<div class="site-header__navigation">
 					<ul>
 						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Generic SChedule</a></li>
+						<li><a href="#">Generic Schedule</a></li>
 						<li><a href="#">Generic Text</a></li>
 					</ul>
 				</div>
 			</header>
 
 			<div class="site-banner" id="content">
-				<h1>
+				<h1 class="site-banner__title">
 					Text <strong>Everyday, Everything, Everywhere</strong> and
 					your generic text <strong>fully-funded Text</strong>
 				</h1>
 
-				<form action="">
-					<label for="email-address">Email Address</label>
+				<form action="" class="site-banner__form">
+					<label class="screen-reader-text" for="email-address"
+						>Email address</label
+					>
 					<input
+						class="email-address"
 						type="text"
 						id="email-address"
-						placeholder="Email Address"
+						placeholder="Email address"
 					/>
 
-					<label for="district-select">Select your District</label>
-					<select name="district" id="district-select">
+					<label class="screen-reader-text" for="district-select"
+						>Select your District</label
+					>
+					<select
+						class="district-select"
+						name="district"
+						id="district-select"
+						required
+					>
+						<option value="" disabled selected
+							>Select your District</option
+						>
 						<option value="district-1">District 1</option>
 						<option value="district-2">District 2</option>
 						<option value="district-3">District 3</option>
@@ -53,13 +73,20 @@
 						<option value="district-10">District 10</option>
 					</select>
 
-					<input type="button" id="submit-pledge" value="Go" />
+					<div class="updates">
+						<input type="checkbox" name="updates" id="updates" />
+						<label for="updates"
+							>I'd like to receive updates from Generic Text about
+							this program</label
+						>
+					</div>
 
-					<input type="checkbox" name="updates" id="updates" />
-					<label for="updates"
-						>I'd like to receive updates from Generic Text about
-						this program</label
-					>
+					<input
+						type="button"
+						id="submit-pledge"
+						class="submit-button"
+						value="Go"
+					/>
 				</form>
 			</div>
 		</div>
