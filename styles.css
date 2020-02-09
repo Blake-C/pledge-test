@@ -6,6 +6,7 @@
 *,
 *:before,
 *:after {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	overflow: initial;
 }
@@ -56,6 +57,7 @@ h6 {
 *************/
 .screen-reader-text {
 	border: 0;
+	-webkit-clip-path: inset(50%);
 	clip-path: inset(50%);
 	clip: rect(1px, 1px, 1px, 1px);
 	height: 1px;
@@ -80,8 +82,13 @@ h6 {
 /* Site Header */
 .site-header {
 	padding: 7px 14px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 
@@ -151,7 +158,10 @@ h6 {
 
 .site-banner__form {
 	padding-bottom: 55px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	color: rgb(255, 255, 255);
 }
@@ -210,6 +220,8 @@ h6 {
 
 .site-banner__form .updates {
 	margin-top: 50px;
+	-webkit-box-ordinal-group: 3;
+	-ms-flex-order: 2;
 	order: 2;
 	text-align: center;
 	width: 100%;
@@ -218,6 +230,8 @@ h6 {
 .site-banner__form .submit-button {
 	background-color: rgb(255, 255, 2555);
 	color: rgb(17, 94, 170);
+	-webkit-box-ordinal-group: 2;
+	-ms-flex-order: 1;
 	order: 1;
 	text-transform: uppercase;
 	font-size: 1rem;
@@ -266,7 +280,10 @@ h6 {
 .pladge-wrapper {
 	max-width: 1034px;
 	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	padding: 64px 0 100px;
 }
@@ -328,7 +345,10 @@ h6 {
 
 .leaderboard__pledges li {
 	list-style-type: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: nowrap;
 	flex-wrap: nowrap;
 	padding-bottom: 5px;
 }
@@ -354,6 +374,8 @@ h6 {
 	background-color: rgb(0, 75, 142);
 	border-top-right-radius: 5px;
 	display: inline-block;
+	-webkit-transition: width 0.6s;
+	-o-transition: width 0.6s;
 	transition: width 0.6s;
 	width: 0;
 	border-bottom-right-radius: 5px;
