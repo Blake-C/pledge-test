@@ -277,6 +277,28 @@ h6 {
 	width: 100%;
 }
 
+.current-pledges {
+	border-bottom: 1px solid rgb(144, 172, 213);
+	position: relative;
+	padding-bottom: 80px;
+}
+
+.current-pledges:after {
+	background-image: url('../images/recycle-circle.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	bottom: -60px;
+	content: '';
+	display: block;
+	height: 120px;
+	margin-left: -60px;
+	position: absolute;
+	right: 50%;
+	left: 50%;
+	top: initial;
+	width: 120px;
+}
+
 .current-pledges__callout {
 	font-size: 1.7rem;
 	text-align: center;
@@ -287,6 +309,10 @@ h6 {
 	font-size: 5rem;
 	color: rgb(90, 255, 168);
 	font-weight: 700;
+}
+
+.leaderboard {
+	padding-top: 80px;
 }
 
 .leaderboard__title {
@@ -341,22 +367,15 @@ h6 {
 	.current-pledges {
 		padding-right: 80px;
 		border-right: 1px solid rgb(144, 172, 213);
+		border-bottom: none;
 		position: relative;
 	}
 
 	.current-pledges:after {
-		background-image: url('../images/recycle-circle.png');
-		background-position: center;
-		background-repeat: no-repeat;
-		bottom: 50%;
-		content: '';
-		display: block;
-		height: 120px;
 		margin-top: -60px;
-		position: absolute;
 		right: -60px;
 		top: 50%;
-		width: 120px;
+		left: initial;
 	}
 
 	.current-pledges {
