@@ -330,6 +330,8 @@ h6 {
 
 .leaderboard {
 	padding-top: 80px;
+	max-width: 400px;
+	margin: 0 auto;
 }
 
 .leaderboard__title {
@@ -344,13 +346,14 @@ h6 {
 }
 
 .leaderboard__pledges li {
-	list-style-type: none;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
 	-ms-flex-wrap: nowrap;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
 	flex-wrap: nowrap;
+	list-style-type: none;
 	padding-bottom: 5px;
+	position: relative;
 }
 
 .leaderboard__district-title {
@@ -367,7 +370,9 @@ h6 {
 .leaderboard__pledge {
 	color: rgb(166, 189, 222);
 	font-size: 0.9rem;
+	left: 100px;
 	padding: 6px 9px;
+	position: absolute;
 }
 
 .leaderboard__bar-graph {
@@ -381,13 +386,22 @@ h6 {
 	border-bottom-right-radius: 5px;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 400px) {
+	.leaderboard__pledge {
+		left: initial;
+		position: relative;
+	}
+}
+
+@media screen and (min-width: 850px) {
 	.current-pledges {
 		width: 40%;
 	}
 
 	.leaderboard {
 		width: 60%;
+		padding-top: 0;
+		padding-left: 15px;
 	}
 
 	.current-pledges {
@@ -409,10 +423,6 @@ h6 {
 		border-right: 1px solid rgb(144, 172, 213);
 		position: relative;
 	}
-
-	.leaderboard {
-		padding-left: 80px;
-	}
 }
 
 @media screen and (min-width: 960px) {
@@ -428,6 +438,7 @@ h6 {
 	.leaderboard {
 		padding-left: 140px;
 		padding-top: 0;
+		max-width: initial;
 	}
 
 	.current-pledges__callout {
