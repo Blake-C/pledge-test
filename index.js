@@ -39,4 +39,19 @@
 			real_checkbox.checked = real_checkbox.checked ? false : true
 		})
 	})
+
+	// Select list initial color
+	var select_list = document.querySelectorAll('.js-district-select')
+	var select_list = Array.prototype.slice.call(select_list)
+
+	select_list.map(function(element) {
+		if (element.classList.contains('clicked')) {
+			return
+		}
+
+		element.addEventListener('focus', function() {
+			console.log('here')
+			element.classList.add('clicked')
+		})
+	})
 })()

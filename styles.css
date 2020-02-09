@@ -179,35 +179,57 @@ h6 {
 	margin: 10px 15px;
 }
 
-.site-banner__form option:disabled {
+.site-banner__form .district-select {
 	font-size: 1rem;
 	color: rgb(77, 122, 188);
 	line-height: 1;
+	margin: 0;
+	padding-right: 40px;
+}
+
+.site-banner__form .district-select.clicked {
+	color: rgb(255, 255, 255);
+}
+
+.site-banner__form .select-wrapper {
+	position: relative;
+	width: 100%;
+	margin: 10px 15px;
+}
+
+.site-banner__form .select-wrapper:after {
+	background-image: url('./images/downarrow.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	bottom: 0;
+	content: '';
+	display: block;
+	pointer-events: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
 }
 
 .site-banner__form input::-webkit-input-placeholder {
 	/* Chrome/Opera/Safari */
 	font-size: 1rem;
 	color: rgb(77, 122, 188);
-	line-height: 1;
 }
 .site-banner__form input::-moz-placeholder {
 	/* Firefox 19+ */
 	font-size: 1rem;
 	color: rgb(77, 122, 188);
-	line-height: 1;
 }
 .site-banner__form input:-ms-input-placeholder {
 	/* IE 10+ */
 	font-size: 1rem;
 	color: rgb(77, 122, 188);
-	line-height: 1;
 }
 .site-banner__form input:-moz-placeholder {
 	/* Firefox 18- */
 	font-size: 1rem;
 	color: rgb(77, 122, 188);
-	line-height: 1;
 }
 
 .site-banner__form .email-address {
@@ -266,7 +288,14 @@ h6 {
 	}
 
 	.site-banner__form .district-select {
+		height: 100%;
+		margin-right: 0;
 		width: 220px;
+	}
+
+	.site-banner__form .select-wrapper {
+		margin: 0 10px 0 0;
+		width: initial;
 	}
 
 	.site-banner__form .updates {

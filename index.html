@@ -47,31 +47,35 @@
 						type="text"
 						id="email-address"
 						placeholder="Email address"
+						required
+						pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
 					/>
 
 					<label class="screen-reader-text" for="district-select"
 						>Select your District</label
 					>
-					<select
-						class="district-select"
-						name="district"
-						id="district-select"
-						required
-					>
-						<option value="" disabled selected
-							>Select your District</option
+					<div class="select-wrapper">
+						<select
+							class="district-select js-district-select"
+							name="district"
+							id="district-select"
+							required
 						>
-						<option value="district-1">District 1</option>
-						<option value="district-2">District 2</option>
-						<option value="district-3">District 3</option>
-						<option value="district-4">District 4</option>
-						<option value="district-5">District 5</option>
-						<option value="district-6">District 6</option>
-						<option value="district-7">District 7</option>
-						<option value="district-8">District 8</option>
-						<option value="district-9">District 9</option>
-						<option value="district-10">District 10</option>
-					</select>
+							<option value="" disabled selected
+								>Select your District</option
+							>
+							<option value="district-1">District 1</option>
+							<option value="district-2">District 2</option>
+							<option value="district-3">District 3</option>
+							<option value="district-4">District 4</option>
+							<option value="district-5">District 5</option>
+							<option value="district-6">District 6</option>
+							<option value="district-7">District 7</option>
+							<option value="district-8">District 8</option>
+							<option value="district-9">District 9</option>
+							<option value="district-10">District 10</option>
+						</select>
+					</div>
 
 					<div class="updates">
 						<span class="checkbox js_checkbox">
@@ -89,12 +93,7 @@
 						>
 					</div>
 
-					<input
-						type="button"
-						id="submit-pledge"
-						class="submit-button"
-						value="Go"
-					/>
+					<button class="submit-button">Go</button>
 				</form>
 			</div>
 		</div>
