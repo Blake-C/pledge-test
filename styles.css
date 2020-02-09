@@ -225,6 +225,22 @@ h6 {
 	order: 2;
 	text-align: center;
 	width: 100%;
+	cursor: pointer;
+}
+
+.site-banner__form .checkbox {
+	background-image: url('./images/checkboxes.svg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 31px;
+	width: 33px;
+	vertical-align: middle;
+	margin-right: 50px;
+}
+
+.site-banner__form .checkbox.checked {
+	background-position: center 1px;
 }
 
 .site-banner__form .submit-button {

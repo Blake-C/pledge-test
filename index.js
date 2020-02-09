@@ -24,4 +24,17 @@
 			element.style.width = pledge_amount_int + 'px'
 		}, 100)
 	})
+
+	// Checkbox
+	var checkboxes = document.querySelectorAll('.js_checkbox')
+	var checkboxes_array = Array.prototype.slice.call(checkboxes)
+
+	checkboxes_array.map(function(element) {
+		element.addEventListener('click', function() {
+			var real_checkbox = element.querySelector('input[type="checkbox"]')
+
+			element.classList.toggle('checked')
+			real_checkbox.checked = real_checkbox.checked ? false : true
+		})
+	})
 })()
