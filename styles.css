@@ -166,7 +166,7 @@ h6 {
 	border-radius: 4px;
 	color: rgb(255, 255, 255);
 	font-size: 1rem;
-	margin: 0 5px;
+	margin: 10px 15px;
 }
 
 .site-banner__form option:disabled {
@@ -225,8 +225,9 @@ h6 {
 }
 
 @media screen and (min-width: 720px) {
-	.site-banner__form input,
-	.site-banner__form select {
+	.site-banner__form .email-address,
+	.site-banner__form .submit-button,
+	.site-banner__form .district-select {
 		margin: 0 10px 0 0;
 	}
 
