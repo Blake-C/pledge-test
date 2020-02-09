@@ -5,10 +5,12 @@
 	var pledge_total_value_int = parseInt(pledge_total_value)
 	var start_value = 0
 
-	setInterval(function() {
+	var stats_interval = setInterval(function() {
 		if (start_value !== pledge_total_value_int) {
 			start_value++
 			stats.innerText = start_value.toLocaleString('en-IN')
+		} else {
+			clearInterval(stats_interval)
 		}
 	}, 4)
 
