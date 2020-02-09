@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="35px" height="69px" viewBox="0 0 35 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="33px" height="69px" viewBox="0 0 33 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
     <title>checkboxes</title>
     <desc>Created with Sketch.</desc>
     <g id="checkboxes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect fill="#4D7ABC" x="0" y="0" width="35" height="69"></rect>
-        <g id="Group" transform="translate(2.000000, 0.000000)">
-            <rect id="Checked" stroke="#FFFFFF" x="0" y="3" width="27" height="26"></rect>
-            <polygon id="Path" fill="#FFFFFF" points="4 16.9899051 6.78617104 13.5141505 13.8651417 18.7515957 29.0037258 0 32 2.53206198 13.8651417 25"></polygon>
+        <g transform="translate(1.000000, 0.000000)">
+            <g id="Group">
+                <rect id="Checked" stroke="#FFFFFF" x="0" y="3" width="27" height="26"></rect>
+                <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="4 16.9899051 6.78617104 13.5141505 13.8651417 18.7515957 29.0037258 0 32 2.53206198 13.8651417 25"></polygon>
+            </g>
+            <rect id="Unchecked" stroke="#FFFFFF" x="0" y="42" width="27" height="26"></rect>
         </g>
-        <rect id="Unchecked" stroke="#FFFFFF" x="2" y="42" width="27" height="26"></rect>
     </g>
 </svg>

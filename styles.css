@@ -241,13 +241,20 @@ h6 {
 }
 
 .site-banner__form .updates {
-	margin-top: 50px;
-	-webkit-box-ordinal-group: 3;
+	-ms-flex-align: center;
 	-ms-flex-order: 2;
+	-webkit-box-align: center;
+	-webkit-box-ordinal-group: 3;
+	align-items: center;
+	cursor: pointer;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	margin-top: 50px;
 	order: 2;
+	padding: 15px;
 	text-align: center;
 	width: 100%;
-	cursor: pointer;
 }
 
 .site-banner__form .checkbox {
@@ -256,13 +263,15 @@ h6 {
 	background-repeat: no-repeat;
 	display: inline-block;
 	height: 31px;
-	width: 33px;
-	vertical-align: middle;
-	margin-right: 50px;
+	width: 30%;
 }
 
 .site-banner__form .checkbox.checked {
 	background-position: center 1px;
+}
+
+.site-banner__form .checkbox-label {
+	width: 70%;
 }
 
 .site-banner__form .submit-button {
