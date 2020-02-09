@@ -268,46 +268,22 @@ h6 {
 	padding: 64px 0 100px;
 }
 
-.leaderboard,
-.current-pledges {
+.current-pledges,
+.leaderboard {
 	padding: 15px;
-	width: 50%;
-}
-
-.current-pledges {
-	padding-right: 120px;
-	border-right: 1px solid rgb(144, 172, 213);
-	position: relative;
-}
-
-.current-pledges:after {
-	background-image: url('./images/recycle-circle.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	bottom: 50%;
-	content: '';
-	display: block;
-	height: 120px;
-	margin-top: -60px;
-	position: absolute;
-	right: -60px;
-	top: 50%;
-	width: 120px;
+	width: 100%;
 }
 
 .current-pledges__callout {
-	font-size: 2.5rem;
+	font-size: 1.7rem;
+	text-align: center;
 }
 
 .current-pledges__stats {
 	display: block;
-	font-size: 8rem;
+	font-size: 5rem;
 	color: rgb(90, 255, 168);
 	font-weight: 700;
-}
-
-.leaderboard {
-	padding-left: 140px;
 }
 
 .leaderboard__title {
@@ -346,6 +322,71 @@ h6 {
 /* .leaderboard__bar-graph {
 	flex-grow: 1;
 } */
+
+@media screen and (min-width: 960px) {
+	.current-pledges {
+		width: 40%;
+	}
+
+	.leaderboard {
+		width: 60%;
+	}
+
+	.current-pledges {
+		padding-right: 80px;
+		border-right: 1px solid rgb(144, 172, 213);
+		position: relative;
+	}
+
+	.current-pledges:after {
+		background-image: url('./images/recycle-circle.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		bottom: 50%;
+		content: '';
+		display: block;
+		height: 120px;
+		margin-top: -60px;
+		position: absolute;
+		right: -60px;
+		top: 50%;
+		width: 120px;
+	}
+
+	.current-pledges {
+		padding-right: 80px;
+		border-right: 1px solid rgb(144, 172, 213);
+		position: relative;
+	}
+
+	.leaderboard {
+		padding-left: 80px;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.leaderboard,
+	.current-pledges {
+		width: 50%;
+	}
+
+	.current-pledges {
+		padding-right: 120px;
+	}
+
+	.leaderboard {
+		padding-left: 140px;
+	}
+
+	.current-pledges__callout {
+		font-size: 2.5rem;
+		text-align: left;
+	}
+
+	.current-pledges__stats {
+		font-size: 8rem;
+	}
+}
 
 /*************
     Site Footer
