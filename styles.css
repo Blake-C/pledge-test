@@ -253,7 +253,6 @@ h6 {
 	margin-top: 50px;
 	order: 2;
 	padding: 15px;
-	text-align: center;
 	width: 100%;
 }
 
@@ -263,7 +262,7 @@ h6 {
 	background-repeat: no-repeat;
 	display: inline-block;
 	height: 31px;
-	width: 30%;
+	width: 25%;
 }
 
 .site-banner__form .checkbox.checked {
@@ -271,7 +270,7 @@ h6 {
 }
 
 .site-banner__form .checkbox-label {
-	width: 70%;
+	width: 75%;
 }
 
 .site-banner__form .submit-button {
