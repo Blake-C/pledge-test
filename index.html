@@ -3,37 +3,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="./favicon/apple-touch-icon.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./favicon/favicon-32x32.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="./favicon/favicon-16x16.png"
-		/>
+		<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
 		<link rel="manifest" href="./favicon/site.webmanifest" />
 		<title>Pledge Test</title>
 
-		<link
-			href="https://fonts.googleapis.com/css?family=Lato:100,400,700&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,400,700&display=swap" rel="stylesheet" />
 
 		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
-		<a class="skip-to-content screen-reader-text" href="#content"
-			>Jump to content</a
-		>
+		<a class="skip-to-content screen-reader-text" href="#content">Jump to content</a>
 
 		<div class="header-wrapper">
 			<header class="site-header">
@@ -52,14 +33,12 @@
 
 			<div class="site-banner" id="content">
 				<h1 class="site-banner__title">
-					Text <strong>Everyday, Everything, Everywhere</strong> and
-					your generic text <strong>fully-funded Text</strong>
+					Text <strong>Everyday, Everything, Everywhere</strong> and your generic text
+					<strong>fully-funded Text</strong>
 				</h1>
 
 				<form action="" class="site-banner__form">
-					<label class="screen-reader-text" for="email-address"
-						>Email address</label
-					>
+					<label class="screen-reader-text" for="email-address">Email address</label>
 					<input
 						class="email-address"
 						type="text"
@@ -69,9 +48,7 @@
 						pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
 					/>
 
-					<label class="screen-reader-text" for="district-select"
-						>Select your District</label
-					>
+					<label class="screen-reader-text" for="district-select">Select your District</label>
 					<div class="select-wrapper">
 						<select
 							class="district-select js-district-select"
@@ -79,9 +56,7 @@
 							id="district-select"
 							required
 						>
-							<option value="" disabled selected
-								>Select your District</option
-							>
+							<option value="" disabled selected>Select your District</option>
 							<option value="district-1">District 1</option>
 							<option value="district-2">District 2</option>
 							<option value="district-3">District 3</option>
@@ -97,17 +72,11 @@
 
 					<div class="updates">
 						<span class="checkbox js_checkbox">
-							<input
-								class="screen-reader-text"
-								type="checkbox"
-								name="updates"
-								id="updates"
-							/>
+							<input class="screen-reader-text" type="checkbox" name="updates" id="updates" />
 						</span>
 
 						<label class="checkbox-label" for="updates"
-							>I'd like to receive updates from Generic Text about
-							this program</label
+							>I'd like to receive updates from Generic Text about this program</label
 						>
 					</div>
 
@@ -121,12 +90,7 @@
 				<div class="current-pledges">
 					<p class="current-pledges__callout">
 						There are currently
-						<span
-							class="current-pledges__stats"
-							data-current="1423"
-							id="js-pledges-stats"
-							>0</span
-						>
+						<span class="current-pledges__stats" data-current="1423" id="js-pledges-stats">0</span>
 						Pledges from the 10 Districts of City, ST.
 					</p>
 				</div>
@@ -136,103 +100,53 @@
 
 					<ul class="leaderboard__pledges">
 						<li>
-							<span class="leaderboard__district-title"
-								>District 1</span
-							>
-							<span
-								data-pledge="112"
-								class="leaderboard__bar-graph js-leaderboard__bar-graph"
-							></span>
+							<span class="leaderboard__district-title">District 1</span>
+							<span data-pledge="112" class="leaderboard__bar-graph js-leaderboard__bar-graph"></span>
 							<span class="leaderboard__pledge">112 Pledges</span>
 						</li>
 						<li>
-							<span class="leaderboard__district-title"
-								>District 2</span
-							>
-							<span
-								data-pledge="98"
-								class="leaderboard__bar-graph js-leaderboard__bar-graph"
-							></span>
+							<span class="leaderboard__district-title">District 2</span>
+							<span data-pledge="98" class="leaderboard__bar-graph js-leaderboard__bar-graph"></span>
 							<span class="leaderboard__pledge">98 Pledges</span>
 						</li>
 						<li>
-							<span class="leaderboard__district-title"
-								>District 3</span
-							>
-							<span
-								data-pledge="119"
-								class="leaderboard__bar-graph js-leaderboard__bar-graph"
-							></span>
+							<span class="leaderboard__district-title">District 3</span>
+							<span data-pledge="119" class="leaderboard__bar-graph js-leaderboard__bar-graph"></span>
 							<span class="leaderboard__pledge">119 Pledges</span>
 						</li>
 						<li>
-							<span class="leaderboard__district-title"
-								>District 4</span
-							>
-							<span
-								data-pledge="126"
-								class="leaderboard__bar-graph js-leaderboard__bar-graph"
-							></span>
+							<span class="leaderboard__district-title">District 4</span>
+							<span data-pledge="126" class="leaderboard__bar-graph js-leaderboard__bar-graph"></span>
 							<span class="leaderboard__pledge">126 Pledges</span>
 						</li>
 						<li>
-							<span class="leaderboard__district-title"
-								>District 5</span
-							>
-							<span
-								data-pledge="129"
-								class="leaderboard__bar-graph js-leaderboard__bar-graph"
-							></span>
+							<span class="leaderboard__district-title">District 5</span>
+							<span data-pledge="129" class="leaderboard__bar-graph js-leaderboard__bar-graph"></span>
 							<span class="leaderboard__pledge">129 Pledges</span>
 						</li>
 						<li>
-							<span class="leaderboard__district-title"
-								>District 6</span
-							>
-							<span
-								data-pledge="44"
-								class="leaderboard__bar-graph js-leaderboard__bar-graph"
-							></span>
+							<span class="leaderboard__district-title">District 6</span>
+							<span data-pledge="44" class="leaderboard__bar-graph js-leaderboard__bar-graph"></span>
 							<span class="leaderboard__pledge">44 Pledges</span>
 						</li>
 						<li>
-							<span class="leaderboard__district-title"
-								>District 7</span
-							>
-							<span
-								data-pledge="118"
-								class="leaderboard__bar-graph js-leaderboard__bar-graph"
-							></span>
+							<span class="leaderboard__district-title">District 7</span>
+							<span data-pledge="118" class="leaderboard__bar-graph js-leaderboard__bar-graph"></span>
 							<span class="leaderboard__pledge">118 Pledges</span>
 						</li>
 						<li>
-							<span class="leaderboard__district-title"
-								>District 8</span
-							>
-							<span
-								data-pledge="125"
-								class="leaderboard__bar-graph js-leaderboard__bar-graph"
-							></span>
+							<span class="leaderboard__district-title">District 8</span>
+							<span data-pledge="125" class="leaderboard__bar-graph js-leaderboard__bar-graph"></span>
 							<span class="leaderboard__pledge">125 Pledges</span>
 						</li>
 						<li>
-							<span class="leaderboard__district-title"
-								>District 9</span
-							>
-							<span
-								data-pledge="101"
-								class="leaderboard__bar-graph js-leaderboard__bar-graph"
-							></span>
+							<span class="leaderboard__district-title">District 9</span>
+							<span data-pledge="101" class="leaderboard__bar-graph js-leaderboard__bar-graph"></span>
 							<span class="leaderboard__pledge">101 Pledges</span>
 						</li>
 						<li>
-							<span class="leaderboard__district-title"
-								>District 10</span
-							>
-							<span
-								data-pledge="27"
-								class="leaderboard__bar-graph js-leaderboard__bar-graph"
-							></span>
+							<span class="leaderboard__district-title">District 10</span>
+							<span data-pledge="27" class="leaderboard__bar-graph js-leaderboard__bar-graph"></span>
 							<span class="leaderboard__pledge">27 Pledges</span>
 						</li>
 					</ul>
