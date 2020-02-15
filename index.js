@@ -34,7 +34,12 @@
 			var real_checkbox = element.querySelector('input[type="checkbox"]')
 
 			element.classList.toggle('checked')
-			real_checkbox.checked = real_checkbox.checked ? false : true
+
+			if (element.classList.contains('checked')) {
+				real_checkbox.checked = true
+			} else {
+				real_checkbox.checked = false
+			}
 		})
 	})
 

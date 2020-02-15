@@ -246,7 +246,6 @@ h6 {
 	-webkit-box-align: center;
 	-webkit-box-ordinal-group: 3;
 	align-items: center;
-	cursor: pointer;
 	display: -ms-flexbox;
 	display: -webkit-box;
 	display: flex;
@@ -256,13 +255,20 @@ h6 {
 	width: 100%;
 }
 
+.site-banner__form .checkbox__wrapper {
+	display: flex;
+	width: 25%;
+	justify-content: center;
+}
+
 .site-banner__form .checkbox {
 	background-image: url('./images/checkboxes.svg');
 	background-position: center bottom;
 	background-repeat: no-repeat;
+	cursor: pointer;
 	display: inline-block;
 	height: 31px;
-	width: 25%;
+	width: 33px;
 }
 
 .site-banner__form .checkbox.checked {
@@ -270,6 +276,7 @@ h6 {
 }
 
 .site-banner__form .checkbox-label {
+	cursor: pointer;
 	width: 75%;
 }
 
